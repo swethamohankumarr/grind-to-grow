@@ -15,7 +15,7 @@ class Solution {
 }
 
 
-class Solution {
+/*class Solution {
     public int kthElement(int a[], int b[], int k) {
         // code here
         ArrayList<Integer> finall = new ArrayList<>();
@@ -31,4 +31,27 @@ class Solution {
         
         return finall.get(k-1);
     }
-}
+}*/
+
+
+/*class Solution {
+    public static int intersectSize(int a[], int b[]) {
+        // Your code here
+       
+        HashSet<Integer> setA = new HashSet<>();
+        for(int i=0;i<a.length;i++){
+            setA.add(a[i]);
+        }
+        int count=0;
+        
+        for(int i=0;i<b.length;i++){
+            if(setA.contains(b[i])){
+                count++;
+                setA.remove(b[i]);
+            }
+        }
+        
+        return count;
+        
+    }
+}*/
